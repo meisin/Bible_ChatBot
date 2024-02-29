@@ -18,7 +18,7 @@ st.sidebar.markdown("---")
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Ask me a question about the Bible and I will try my best to answer."}
+        {"role": "assistant", "content": "Ask me a question about the contents in the Bible and I will try my best to answer."}
     ]
 
 @st.cache_resource(show_spinner=False)
