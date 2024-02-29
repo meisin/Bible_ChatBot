@@ -18,7 +18,7 @@ def load_data():
     with st.spinner(text="Loading and indexing the Streamlit docs – hang tight! This should take 1-2 minutes."):
         reader = SimpleDirectoryReader(input_dir="./data", recursive=True)
         docs = reader.load_data()
-        service_context = ServiceContext.from_defaults(llm=OpenAI(model="gpt-3.5-turbo", temperature=0.5, system_prompt="You are an expert on the bible and your job is to answer bible-related questions. Assume that all questions are related to the books in the Bible. Keep your answers based on facts found in the collection of documents– do not hallucinate features."))
+        service_context = ServiceContext.from_defaults(llm=OpenAI(model="gpt-3.5-turbo", temperature=0.5, system_prompt="You are an expert on the bible and your job is to answer bible-related questions. Assume that all questions are related to the books in the Bible. Keep your answers based on facts found in the collection of documents– do not hallucinate features. Respond \"Unsure about answer\" if not sure about the answer"))
         index = VectorStoreIndex.from_documents(docs, service_context=service_context)
         return index
 
