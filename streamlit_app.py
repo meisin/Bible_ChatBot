@@ -11,7 +11,7 @@ st.title('Ask me anything in the Bible!')
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Ask me a question about the Holy Bible and I currently speak only the 'New International Version'!"}
+        {"role": "assistant", "content": "Ask me a question about the Bible and I will try my best to answer."}
     ]
 
 @st.cache_resource(show_spinner=False)
