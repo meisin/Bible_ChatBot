@@ -11,7 +11,7 @@ st.title('Ask me anything in the Bible!')
 
 # Load and display sidebar image with glowing effect
 with st.sidebar:
-        st.image('./image/bible.jpg', caption='bible')
+        st.image('./image/bible.jpg')
 
 st.sidebar.markdown("---")
 
