@@ -5,8 +5,12 @@ import openai
 from llama_index.core import SimpleDirectoryReader
 
 openai.api_key = st.secrets.openai_key
-st.header("Chat with the Holy Bible")
 
-st.title('🎈 App Name')
+st.title('Chat With the Holy Bible')
+
+if "messages" not in st.session_state.keys(): # Initialize the chat message history
+    st.session_state.messages = [
+        {"role": "assistant", "content": "Ask me a question about Streamlit's open-source Python library!"}
+    ]
 
 st.write('Hello world!')
