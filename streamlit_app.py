@@ -10,11 +10,9 @@ st.header('Your Bible ChatBot')
 st.title('Ask me anything in the Bible!')
 
 # Load and display sidebar image with glowing effect
-img_path = "image/bible.jpg"
-st.sidebar.markdown(
-        f'<img src={img_path}>',
-        unsafe_allow_html=True,
-)
+with st.sidebar:
+        st.image('image/bible.jpg', caption='bible')
+
 st.sidebar.markdown("---")
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
