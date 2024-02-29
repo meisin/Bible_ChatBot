@@ -1,9 +1,7 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
+# 📦 Streamlit App - Bible ChatBot
 ```
 
-Description of the app ...
+This is a ChatBot that allows you to query the Holy Bible (New International Version).
 
 ## Demo App
 
