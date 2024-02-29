@@ -9,6 +9,14 @@ openai.api_key = st.secrets.openai_key
 st.header('Your Bible ChatBot')
 st.title('Ask me anything in the Bible!')
 
+# Load and display sidebar image with glowing effect
+img_path = "image/bible.jpg"
+st.sidebar.markdown(
+        f'<img src={img_path}>',
+        unsafe_allow_html=True,
+)
+st.sidebar.markdown("---")
+
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
     st.session_state.messages = [
         {"role": "assistant", "content": "Ask me a question about the Bible and I will try my best to answer."}
