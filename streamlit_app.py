@@ -6,6 +6,24 @@ from llama_index.core import SimpleDirectoryReader
 
 openai.api_key = st.secrets.openai_key
 
+# Streamlit Page Configuration
+st.set_page_config(
+    page_title="Your Bible ChatBot",
+    page_icon="image/bible.png",
+    layout="wide",
+    menu_items={
+        "Get help": "https://github.com/AdieLaine/Streamly",
+        "Report a bug": "https://github.com/AdieLaine/Streamly",
+        "About": """
+            ## Your Bible ChatBot
+            
+            **GitHub**: https://github.com/meisin/Bible_ChatBot/
+            
+            This chatbot is built as a project to demonstrate the ability of Large Language Models in answering questions based on specific sources of information (in this case the Bible). It does quite well in Comprehension-like questions BUT may not work so well on Theological questions. We strongly suggest that you direct these questions to a pastor or any church leader.
+        """
+    }
+)
+
 st.header('Your Bible ChatBot')
 st.title('Ask me anything in the Bible!')
 
