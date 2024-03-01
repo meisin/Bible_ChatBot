@@ -11,7 +11,7 @@ st.title('Ask me anything in the Bible!')
 
 # Load and display sidebar image with glowing effect
 with st.sidebar:
-        st.image('./image/bible.jpg')
+        st.image('./image/bible.png')
 
 st.sidebar.markdown("This chatbot is built as a project to demonstrate the ability of Large Language Models in answering questions based on specific sources of information (in this case the Bible). It does quite well in Comprehension-like questions BUT may not work so well on Theological questions. We strongly suggest that you direct these questions to a pastor or any church leader. ")
 st.sidebar.markdown("---")
